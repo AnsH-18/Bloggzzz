@@ -1,0 +1,364 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 60px;
+    background-color: #2a2438;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-inline: 20px;
+    border-bottom: 1px solid grey;
+    background-color: #2a2438;
+    color: white;
+    padding-bottom: 12px;
+    position: fixed;
+    left :0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.logo > p{
+    font-size: 30px;
+    font-weight: 700;
+}
+.link-item-container{
+    display: flex;
+    
+}
+.link-item-container > ul{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    color: white;
+}
+.link-item-container > ul >li{
+    padding-inline: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #352f44;
+}
+
+
+
+li{
+    list-style: none;
+    font-weight: 700;
+}
+
+.signout-button{
+    /* height: 35px;
+    width: 80px; */
+    background-color: inherit;
+    color: #dbd8e3;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+}
+
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 30px;
+    margin-inline: 80px;
+    margin-top: 10px;
+}
+
+.blogu-container{
+    margin-inline: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 700;
+}
+.title-input-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-bottom: 10px;
+}
+/* .blog-body-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+} */
+
+.title-input-container > input{
+    height: 50px;
+    border:  2px solid #dbd8e3;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #352f44;
+    color: #dbd8e3 ;
+}
+
+
+.title-input-container > label,
+.blog-body-input-container > label{
+    font-size: 20px;
+    font-weight: 600;
+    color: #dbd8e3;
+}
+
+.jodit_container.editor{
+    height: 300px;
+}
+
+.submit-blog-container{
+    display: flex;
+    justify-content: center;
+}
+.submit-blog-container > button{
+    height: 40px;
+    width: 120px;
+    background-color: #352f44;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    margin-top: 20px;
+}
+
+.blogs-container{
+   margin-top: 20px;
+   margin-inline: 100px;
+}
+
+.blog-in-home{
+    /* border: 1px solid #dbd8e3; */
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #352f44b3;
+    height: 200px;
+    padding-bottom: 5px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+
+.body-container{
+    font-size: 17px;
+    color: #dbd8e3;
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.read-more{
+    background-color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: inherit;
+    padding-top: 5px;
+}
+.read-more > button{
+    background-color: inherit;
+    border: none;
+    color:#dbd8e3;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.LinkComp{
+    color: black;
+}
+
+.blog-title{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.blog-details-container{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.blog-creation-date{
+    font-size: 12px;
+}
+
+.blog-author{
+    font-size: 12px;
+}
+
+.solo-blog{
+    background-color: #352f44;
+    margin-inline: 140px;
+    margin-top: 60px;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.solo-blog-title{
+    margin-bottom: 6px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.solo-blog-body{
+    font-size: 18px;
+    color: #dbd8e3;
+}
+
+.solo-blog-details{
+    color: rgb(227, 227, 227);
+    text-align: end;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.my-blogs > h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.my-blogs {
+    margin-inline: 140px;
+    margin-top: 30px;
+}
+
+.blog{
+    position: relative;
+    /* background-color: black; */
+}
+.delete-blog{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.delete-blog > button{
+    height: 25px;
+    width: 50px;
+    color: #2a2438;
+    background-color: #dbd8e3;
+    border: none;
+    font-weight: 700;
+}
+
+.container{
+    background-color: #352f44;
+    margin-inline: 400px;
+    width: 450px;
+    padding: 15px;
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+}
+.email,
+.password,
+.confirm-password{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    row-gap: 10px;
+}
+
+.signup-heading{
+    margin-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.email,
+.password,
+.confirm-password > label{
+    font-size: 20px;
+    font-weight: 500;
+    color: #dbd8e3;
+}
+
+
+.email> input{
+    height: 38px;
+    background-color: #2a2438;
+    border: 2px solid #5c5470;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.password > input{
+    height: 38px;
+    background-color: #2a2438;
+    color: white;
+    border: 2px solid #5c5470;
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.confirm-password > input{
+    height: 38px;
+    background-color: #2a2438;
+    color: white;
+    border: 2px solid #5c5470;
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.submit-div{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-div > button {
+    height: 35px;
+    width: 120px;
+    margin-bottom: 15px;
+    background-color: #2a2438;
+    color: #dbd8e3;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+.signup-to-login{
+    display: flex;
+    column-gap: 10px;
+    font-size: 18px;
+    align-items: center;
+    color: white;
+}
+
+.signup-to-login > link{
+    text-decoration: none;
+}
