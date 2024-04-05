@@ -73,7 +73,7 @@ export default function Login(){
                
                 <div className="signup-to-login">
                     <h4>Don't have an account</h4>
-                    <Link style={style} to= "/signup">Sign up</Link>
+                    <Link style={style} to= "/">Sign up</Link>
                 </div>
             </div>
         )

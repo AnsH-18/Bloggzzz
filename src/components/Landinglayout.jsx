@@ -13,7 +13,6 @@ export default function Landinglayout() {
   currentUser ? navigate(`/${currentUser.uid}`): null
   return (
     <>
-      <Header />
       <Outlet/>
     </>
   );

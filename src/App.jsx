@@ -20,8 +20,9 @@ function App() {
         <Routes>
           
             <Route path='/' element= {<Landinglayout/>}>
-                <Route path='/' element = {<HomeLayout/>}></Route>
-                <Route path='about' element = {<About/>}></Route>
+              <Route index element={<Signup />} />
+              <Route path='login' element={<Login />} />
+            
             </Route>
             <Route path='/:id' element = {<Loggedlayout/>}>
               <Route index element = {<BlogWrapper/>}></Route>
@@ -31,9 +32,7 @@ function App() {
               <Route path='createblog' element = {<Create/>}></Route>
               <Route path='profile' element = {<Profile/>}></Route>
             </Route>
-            <Route path='/signup' element={<Signup />} />
-            <Route path='/login' element={<Login />} />
-            
+           
           </Routes>
       </AuthProvider>
     </BrowserRouter>

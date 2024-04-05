@@ -14,7 +14,7 @@ export default function Header(props) {
   async function signOut(){
     console.log("so")
     await user.signout()
-    navigate("/signup")
+    navigate("/")
   }
 
   return (
@@ -25,7 +25,6 @@ export default function Header(props) {
         </div>
         <div className="link-item-container">
           <ul>
-            {user.currentUser ? 
               <>  
                  <li>
                   <Link to="blogs" style={style}>Blogs</Link>
@@ -41,15 +40,6 @@ export default function Header(props) {
                 </li>
               </>
              
-              :
-              <>
-                 <li>
-                  <Link to= "/" style={style}>Home</Link>
-                </li>
-                <li>
-                  <Link to="/signup" style={style}>Signup</Link>
-                </li>
-              </>}
           </ul>
         </div>
       </nav>
