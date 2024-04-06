@@ -26,9 +26,11 @@ export default function Profile(){
     
 
     return(
-        <div className="my-blogs">
-            <h2>My Blogs</h2>
-            {blogs}
-        </div>
+            <div className="my-blogs">
+                <h2>My Blogs</h2>
+                {blogs}
+            </div>
+
+        
     )
 }

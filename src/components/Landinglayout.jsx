@@ -12,8 +12,9 @@ export default function Landinglayout() {
   const {currentUser} = useAuth()
   currentUser ? navigate(`/${currentUser.uid}`): null
   return (
-    <>
+    <div className="landing">
       <Outlet/>
-    </>
+    </div>
+    
   );
 }

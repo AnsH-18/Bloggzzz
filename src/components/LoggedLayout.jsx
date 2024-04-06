@@ -14,10 +14,13 @@ export default function Loggedlayout(){
 
 
     return(
-        <Context.Provider value={{currBlogId, setCurrBlogId}}>
-            <Header/>
-            <Outlet/>   
-        </Context.Provider>
+        <div className="logged-layout">
+             <Context.Provider value={{currBlogId, setCurrBlogId}}>
+                <Header/>
+                <Outlet/>   
+            </Context.Provider>
+        </div>
+       
     )
         
 }

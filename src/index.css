@@ -7,6 +7,8 @@
 body {
     padding-top: 60px;
     background-color: #2a2438;
+    display: flex;
+    justify-content: center;
 }
 nav{
     display: flex;
@@ -77,7 +79,6 @@ li{
 }
 
 .blogu-container{
-    margin-inline: 100px;
     margin-top: 30px;
     margin-bottom: 50px;
 }
@@ -137,10 +138,13 @@ li{
     border: none;
     margin-top: 20px;
 }
-
+.logged-layout{
+    display: flex;
+    justify-content: center;
+}
 .blogs-container{
    margin-top: 20px;
-   margin-inline: 100px;
+   width: 80%;
 }
 
 .blog-in-home{
@@ -164,7 +168,7 @@ li{
 }
 
 .body-container{
-    font-size: 17px;
+    font-size: calc(0.6vw + 0.6vh + 0.6vmin);
     color: #dbd8e3;
     padding: 10px;
     overflow: hidden;
@@ -186,7 +190,7 @@ li{
     background-color: inherit;
     border: none;
     color:#dbd8e3;
-    font-size: 14px;
+    font-size: calc(.6vw + .6vh + .6vmin);
     font-weight: 700;
 }
 
@@ -195,7 +199,7 @@ li{
 }
 
 .blog-title{
-    font-size: 25px;
+    font-size: calc(1vw + 1vh + 1vmin);
     font-weight: 700;
 }
 
@@ -206,7 +210,7 @@ li{
 }
 
 .blog-creation-date{
-    font-size: 12px;
+    font-size: calc(.5vw + .5vh + .5vmin);
 }
 
 .blog-author{
@@ -241,14 +245,15 @@ li{
     font-size: 13px;
 }
 
+
 .my-blogs > h2{
     color: white;
     font-size: 30px;
     margin-bottom: 20px;
 }
 .my-blogs {
-    margin-inline: 140px;
     margin-top: 30px;
+    width: 80%;
 }
 
 .blog{
@@ -262,19 +267,22 @@ li{
 }
 
 .delete-blog > button{
-    height: 25px;
-    width: 50px;
-    color: #2a2438;
-    background-color: #dbd8e3;
+    color: white;
+    background-color: red;
     border: none;
     font-weight: 700;
+    font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
-
+.landing{
+    width: 350px;
+    margin: auto 0 ;
+}
 .container{
     background-color: #352f44;
-    margin-inline: 400px;
-    width: 450px;
     padding: 15px;
+    width: 100%;
 }
 .signup-container{
     display: flex;
@@ -361,4 +369,20 @@ li{
 
 .signup-to-login > link{
     text-decoration: none;
+}
+
+@media screen and (max-width: 786px){
+    .blogs-container{
+        width: 90%;
+    }
+    .my-blogs{
+        width: 90%;
+    }
+    .blogu-container{
+        width: 90%;
+    }
+    .title-input-container{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 }
