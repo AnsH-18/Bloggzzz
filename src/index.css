@@ -218,8 +218,8 @@ li{
 }
 
 .solo-blog{
-    background-color: #352f44;
-    margin-inline: 140px;
+    background-color: #352f44;  
+    width: 80%;
     margin-top: 60px;
     padding: 20px;
     margin-bottom: 60px;
@@ -384,5 +384,8 @@ li{
     .title-input-container{
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+    .solo-blog{
+        width: 90%;
     }
 }
