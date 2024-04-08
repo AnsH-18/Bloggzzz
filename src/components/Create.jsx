@@ -34,7 +34,11 @@ export default function Create(){
             console.log(err)
         }
    }
-
+const config = {
+    style : {
+        height: "0.6vh"
+    }
+}
 
     return (
         <>
@@ -49,6 +53,7 @@ export default function Create(){
                <div className="blog-body-input-container">
                     <label htmlFor="blog-body">Blog</label>
                     <JoditEditor
+                        config={{minHeight : 400}}
                         className="editor"
                         ref={editor}
                         value={content}
