@@ -10,22 +10,28 @@ body {
     display: flex;
     justify-content: center;
 }
-nav{
+.header{
+    background-color: white;
+}
+#nav{
     display: flex;
     justify-content: space-between;
     padding: 10px;
     padding-inline: 20px;
     border-bottom: 1px solid grey;
-    background-color: #2a2438;
+    background-color: inherit;
     color: white;
     padding-bottom: 12px;
+    
+}
+nav{
+    background-color:  #2a2438;
     position: fixed;
     left :0;
     right: 0;
     top: 0;
     z-index: 100;
 }
-
 .logo > p{
     font-size: 30px;
     font-weight: 700;
@@ -168,7 +174,7 @@ li{
 }
 
 .body-container{
-    font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+    font-size: calc(0.8vw + 0.9vh + 0.6vmin);
     color: #dbd8e3;
     padding: 10px;
     overflow: hidden;
@@ -199,7 +205,7 @@ li{
 }
 
 .blog-title{
-    font-size: calc(1vw + 1vh + 1vmin);
+    font-size: calc(1.3vw + 1.5vh + 1.3vmin);
     font-weight: 700;
 }
 
@@ -207,6 +213,8 @@ li{
     display: flex;
     flex-direction: column;
     text-align: end;
+    color: white;
+    font-size: calc(.3vw + .3vh + .3vmin);
 }
 
 .blog-creation-date{
@@ -268,7 +276,7 @@ li{
 
 .delete-blog > button{
     color: white;
-    background-color: red;
+    background-color: #2a2438;
     border: none;
     font-weight: 700;
     font-size: calc(0.6vw + 0.6vh + 0.6vmin);
@@ -371,6 +379,51 @@ li{
     text-decoration: none;
 }
 
+
+
+/* HamburgerMenu.css */
+
+.hamburger-menu {
+    position: relative;
+    display: none;
+  }
+  
+  .hamburger-icon {
+    background-color: inherit;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    background-color: inherit;
+    padding: 10px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Show menu when hamburger icon is clicked */
+  /* .hamburger-menu:hover .menu {
+    display: block;
+  } */
+  
+
+  
 @media screen and (max-width: 786px){
     .blogs-container{
         width: 90%;
@@ -387,5 +440,14 @@ li{
     }
     .solo-blog{
         width: 90%;
+    }
+    .link-item-container{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .menu{
+        display: block;
     }
 }

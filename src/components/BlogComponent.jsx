@@ -22,10 +22,11 @@ export default function BlogComponent(props){
         <div className="blog-in-home">
             <div className="title-container">
                 <p className="blog-title">{props.title}</p>
-                <div className="blog-details-container">
+                
+            </div>
+            <div className="blog-details-container">
                     <p className="blog-creation-date">{props.date}</p>
                     <p className="blog-author">- {props.author}</p>
-                </div>
             </div>
             <div className="body-container">
                 <p dangerouslySetInnerHTML = {{__html: props.body}}/>
