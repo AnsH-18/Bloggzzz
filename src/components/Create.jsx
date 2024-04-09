@@ -34,11 +34,6 @@ export default function Create(){
             console.log(err)
         }
    }
-const config = {
-    style : {
-        height: "0.6vh"
-    }
-}
 
     return (
         <>

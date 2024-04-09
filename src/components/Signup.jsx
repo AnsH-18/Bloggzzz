@@ -56,48 +56,51 @@ export default function Signup() {
     return(
         <div className="container">
              {error && alert(error)}
-            <div className="signup-container">
-                <div className="signup-heading">
-                    <h3>Sign Up</h3> 
-                </div>
-                <div className="fields">
-                    <div className="email">
-                        <label htmlFor="email">Email</label>
-                        <input 
-                            name="email"
-                            type="email" 
-                            id = "email" 
-                            required
-                            onChange={handleInput}/>
+             <div className="internal-container">
+                <div className="signup-container">
+                    <div className="signup-heading">
+                        <h3>Sign Up</h3> 
                     </div>
-                    
-                    <div className="password">
-                        <label htmlFor="password">Password</label>
-                        <input 
-                            name="password"
-                            type="password" 
-                            id = "password"
-                            onChange={handleInput}/>
+                    <div className="fields">
+                        <div className="email">
+                            <label htmlFor="email">Email</label>
+                            <input 
+                                name="email"
+                                type="email" 
+                                id = "email" 
+                                required
+                                onChange={handleInput}/>
+                        </div>
+                        
+                        <div className="password">
+                            <label htmlFor="password">Password</label>
+                            <input 
+                                name="password"
+                                type="password" 
+                                id = "password"
+                                onChange={handleInput}/>
+                        </div>
+                        
+                        <div className="confirm-password">
+                            <label htmlFor="confirmPassword">Confirm Password</label>
+                            <input 
+                                name="confirmPassword"
+                                type="password" 
+                                id = "confirmPassword"
+                                onChange={handleInput}/>
+                        </div>
+                        
                     </div>
-                    
-                    <div className="confirm-password">
-                        <label htmlFor="confirmPassword">Confirm Password</label>
-                        <input 
-                            name="confirmPassword"
-                            type="password" 
-                            id = "confirmPassword"
-                            onChange={handleInput}/>
+                    <div className="submit-div">
+                        <button  onClick={ handleSubmit}>Submit</button>
                     </div>
-                    
                 </div>
-                <div className="submit-div">
-                    <button  onClick={ handleSubmit}>Submit</button>
+                <div className="signup-to-login">
+                    <h4>Already have an account?</h4>
+                    <Link style={style} to = "/login">Log in</Link>
                 </div>
-            </div>
-            <div className="signup-to-login">
-                <h4>Already have an account?</h4>
-                <Link style={style} to = "/login">Log in</Link>
-            </div>
+             </div>
+            
             
         </div>
     )

@@ -41,40 +41,43 @@ export default function Login(){
     return(
             <div className="container">
                  {error && alert(error)}
-                 <div className="signup-container">
-                    <div className="signup-heading">
-                        <h3>Log In</h3>
-                    </div>
-                    <div className="fields">
-                        <div className="email">
-                            <label htmlFor="email">Email</label>
-                            <input 
-                                name="email"
-                                type="email" 
-                                id = "email" 
-                                required
-                                onChange={handleInput}/>
+                 <div className="internal-container">
+                    <div className="signup-container">
+                        <div className="signup-heading">
+                            <h3>Log In</h3>
                         </div>
-                        <div className="password">
-                            <label htmlFor="password">Password</label>
-                            <input 
-                                name="password"
-                                type="password" 
-                                id = "password"
-                                onChange={handleInput}/>
+                        <div className="fields">
+                            <div className="email">
+                                <label htmlFor="email">Email</label>
+                                <input 
+                                    name="email"
+                                    type="email" 
+                                    id = "email" 
+                                    required
+                                    onChange={handleInput}/>
+                            </div>
+                            <div className="password">
+                                <label htmlFor="password">Password</label>
+                                <input 
+                                    name="password"
+                                    type="password" 
+                                    id = "password"
+                                    onChange={handleInput}/>
+                            </div>
+                            
+                            
                         </div>
-                        
-                        
+                        <div className="submit-div">
+                            <button  onClick={handleSubmit}>Submit</button>
+                        </div>
                     </div>
-                    <div className="submit-div">
-                        <button  onClick={handleSubmit}>Submit</button>
+                
+                    <div className="signup-to-login">
+                        <h4>Don't have an account</h4>
+                        <Link style={style} to= "/">Sign up</Link>
                     </div>
                  </div>
-               
-                <div className="signup-to-login">
-                    <h4>Don't have an account</h4>
-                    <Link style={style} to= "/">Sign up</Link>
-                </div>
+                 
             </div>
         )
 }

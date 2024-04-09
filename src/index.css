@@ -5,10 +5,7 @@
 }
 
 body {
-    padding-top: 60px;
     background-color: #2a2438;
-    display: flex;
-    justify-content: center;
 }
 .header{
     background-color: white;
@@ -143,7 +140,7 @@ li{
     justify-content: center;
 }
 .blogs-container{
-   margin-top: 20px;
+   margin-top: 70px;
    width: 80%;
 }
 
@@ -280,9 +277,15 @@ li{
     margin: auto 0 ;
 }
 .container{
-    background-color: #352f44;
-    padding: 15px;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.internal-container{
+    width: 300px;
 }
 .signup-container{
     display: flex;
