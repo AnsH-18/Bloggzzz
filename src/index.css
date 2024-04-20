@@ -80,7 +80,7 @@ li{
 }
 
 .blogu-container{
-    margin-top: 30px;
+    margin-top: 12.5vh;
     margin-bottom: 50px;
 }
 .heading{
@@ -250,7 +250,7 @@ li{
     margin-bottom: 20px;
 }
 .my-blogs {
-    margin-top: 30px;
+    margin-top: 12.5vh;
     width: 80%;
 }
 
@@ -265,12 +265,14 @@ li{
 
 .delete-blog > button{
     color: white;
-    background-color: #2a2438;
+    background-color: inherit;
     border: none;
     font-weight: 700;
     font-size: calc(0.6vw + 0.6vh + 0.6vmin);
     margin-left: 5px;
     margin-bottom: 5px;
+    font-size: 15px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .landing{
     width: 350px;

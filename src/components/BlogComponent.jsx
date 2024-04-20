@@ -26,7 +26,7 @@ export default function BlogComponent(props){
             </div>
             <div className="blog-details-container">
                     <p className="blog-creation-date">{props.date}</p>
-                    <p className="blog-author">- {props.author}</p>
+                    <p className="blog-author">{props.author}</p>
             </div>
             <div className="body-container">
                 <p dangerouslySetInnerHTML = {{__html: props.body}}/>
@@ -39,7 +39,9 @@ export default function BlogComponent(props){
         </Link>
        
         <div className="delete-blog">
-                {props.profile && <button onClick={() => props.deleteBlog(props.blogid)}>Delete</button>}
+                {props.profile && <button onClick={() => props.deleteBlog(props.blogid)}>
+                    X
+                 </button>}
             </div>
         </div>
         
